@@ -1,0 +1,17 @@
+.body {
+    /* background-image: url(../public/assets/images/pattern-background-desktop-dark.svg); */
+}
+
+.lightBackground {
+    background-image: url('../public/assets/images/pattern-background-desktop-light.svg');
+    /* background-image: url('/path/to/light-theme-image.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
+
+.darkBackground {
+    background-image: url('../public/assets/images/pattern-background-desktop-dark.svg');
+    /* background-image: url('/path/to/dark-theme-image.jpg'); */
+    background-size: cover;
+    background-position: center;
+}
