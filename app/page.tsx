@@ -20,7 +20,7 @@ export default function Home() {
     }, []);
 
   return (
-    <main className={`h-screen text-black dark:text-white bg-[#D6DBDC] dark:bg-[#313e51] flex flex-col justify-start items-center gap-8 ${theme === 'light' ? styles.lightBackground : styles.darkBackground} ${styles.body}`}
+    <main className={`h-screen text-black dark:text-white bg-[#D6DBDC] dark:bg-[#313e51] flex flex-col justify-start items-center gap-8 ${theme === 'light' ? styles.lightBackground : styles.darkBackground}`}
     style={{
 
     }}>
