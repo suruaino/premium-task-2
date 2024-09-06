@@ -35,12 +35,21 @@ const MainHeader = () => {
   return (
     <header className="w-full max-w-[85%] md:max-w-[1160px] h-20 flex justify-end items-center border">
       <div className="theme-toggle-box flex gap-2">
+      {theme === "light" ? (
         <Image
           src="/assets/images/icon-sun-dark.svg"
           width={20}
           height={20}
           alt="Iight-theme Icon"
+        />): (
+            <Image
+          src="/assets/images/icon-sun-light.svg"
+          width={20}
+          height={20}
+          alt="Iight-theme Icon"
         />
+        )}
+
         {theme === "light" ? (
           <div
             onClick={toggleTheme}
@@ -56,12 +65,19 @@ const MainHeader = () => {
             <div className="w-4 h-4 bg-white z-50 rounded-full"></div>
           </div>
         )}
+         {theme === "light" ? (
         <Image
           src="/assets/images/icon-moon-dark.svg"
           width={20}
           height={20}
           alt="Dark-theme Icon"
-        />
+        />) : (
+        <Image
+        src="/assets/images/icon-moon-light.svg"
+        width={20}
+        height={20}
+        alt="Dark-theme Icon"
+      />)}
       </div>
     </header>
   );
